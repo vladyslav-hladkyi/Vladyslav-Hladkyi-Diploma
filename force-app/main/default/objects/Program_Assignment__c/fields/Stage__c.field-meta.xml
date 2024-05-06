@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A Contact&apos;s stage in a Program Engagement. Picklist values are determined by your Admin. Don&apos;t delete or modify the API Name of the Active And Enrolled picklist values as they are referenced in PMM reports.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>These Picklist values describe a Contact&apos;s stage of engagement in a Program and are displayed in a Path. Values are determined by your Admin.</inlineHelpText>
+    <label>Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Applied</fullName>
+                <default>false</default>
+                <label>Applied</label>
+            </value>
+            <value>
+                <fullName>Application Denied</fullName>
+                <default>false</default>
+                <label>Application Denied</label>
+            </value>
+            <value>
+                <fullName>Enrolled</fullName>
+                <default>false</default>
+                <label>Enrolled</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Withdrawn</fullName>
+                <default>false</default>
+                <label>Withdrawn</label>
+            </value>
+            <value>
+                <fullName>Referral Received</fullName>
+                <default>false</default>
+                <label>Referral Received</label>
+            </value>
+            <value>
+                <fullName>Waitlist</fullName>
+                <default>false</default>
+                <label>Waitlist</label>
+            </value>
+            <value>
+                <fullName>Funding Approved</fullName>
+                <default>false</default>
+                <label>Funding Approved</label>
+            </value>
+            <value>
+                <fullName>Assigned to Staff</fullName>
+                <default>false</default>
+                <label>Assigned to Staff</label>
+            </value>
+            <value>
+                <fullName>Intake Scheduled and Billed</fullName>
+                <default>false</default>
+                <label>Intake Scheduled and Billed</label>
+            </value>
+            <value>
+                <fullName>Contacted Client and Scheduled Intake</fullName>
+                <default>false</default>
+                <label>Contacted Client and Scheduled Intake</label>
+            </value>
+            <value>
+                <fullName>Completed Intake and Billed Initial</fullName>
+                <default>false</default>
+                <label>Completed Intake and Billed Initial</label>
+            </value>
+            <value>
+                <fullName>Provide Services</fullName>
+                <default>false</default>
+                <label>Provide Services</label>
+            </value>
+            <value>
+                <fullName>Complete Services (Bill Completion)</fullName>
+                <default>false</default>
+                <label>Complete Services (Bill Completion)</label>
+            </value>
+            <value>
+                <fullName>Document Collection</fullName>
+                <default>false</default>
+                <label>Document Collection</label>
+            </value>
+            <value>
+                <fullName>Entry into Virtual Gateway</fullName>
+                <default>false</default>
+                <label>Entry into Virtual Gateway</label>
+            </value>
+            <value>
+                <fullName>Services Provided</fullName>
+                <default>false</default>
+                <label>Services Provided</label>
+            </value>
+            <value>
+                <fullName>General Eligibility Determined</fullName>
+                <default>false</default>
+                <label>General Eligibility Determined</label>
+            </value>
+            <value>
+                <fullName>Evaluation Scheduled</fullName>
+                <default>false</default>
+                <label>Evaluation Scheduled</label>
+            </value>
+            <value>
+                <fullName>Evaluation Initiated</fullName>
+                <default>false</default>
+                <label>Evaluation Initiated</label>
+            </value>
+            <value>
+                <fullName>Analyzing Data/Writing Report</fullName>
+                <default>false</default>
+                <label>Analyzing Data/Writing Report</label>
+            </value>
+            <value>
+                <fullName>Evaluation Completed</fullName>
+                <default>false</default>
+                <label>Evaluation Completed</label>
+            </value>
+            <value>
+                <fullName>Assessment Sent to VR Counselor</fullName>
+                <default>false</default>
+                <label>Assessment Sent to VR Counselor</label>
+            </value>
+            <value>
+                <fullName>Referral Received by ESMA</fullName>
+                <default>false</default>
+                <label>Referral Received by ESMA</label>
+            </value>
+            <value>
+                <fullName>Contract in Process</fullName>
+                <default>false</default>
+                <label>Contract in Process</label>
+            </value>
+            <value>
+                <fullName>Intake Scheduled</fullName>
+                <default>false</default>
+                <label>Intake Scheduled</label>
+            </value>
+            <value>
+                <fullName>Complete Report</fullName>
+                <default>false</default>
+                <label>Complete Report</label>
+            </value>
+            <value>
+                <fullName>Send Report to District</fullName>
+                <default>false</default>
+                <label>Send Report to District</label>
+            </value>
+            <value>
+                <fullName>Evaluation Performed</fullName>
+                <default>false</default>
+                <label>Evaluation Performed</label>
+            </value>
+            <value>
+                <fullName>Evaluation Report Written/Sent</fullName>
+                <default>false</default>
+                <label>Evaluation Report Written/Sent</label>
+            </value>
+            <value>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+                <label>Purchasing</label>
+            </value>
+            <value>
+                <fullName>Delivery and Training Scheduled</fullName>
+                <default>false</default>
+                <label>Delivery and Training Scheduled</label>
+            </value>
+            <value>
+                <fullName>In Process</fullName>
+                <default>false</default>
+                <label>In Process</label>
+            </value>
+            <value>
+                <fullName>Delivery and Set Up</fullName>
+                <default>false</default>
+                <label>Delivery and Set Up</label>
+            </value>
+            <value>
+                <fullName>Ticket Closed</fullName>
+                <default>false</default>
+                <label>Ticket Closed</label>
+            </value>
+            <value>
+                <fullName>Active Training</fullName>
+                <default>false</default>
+                <label>Active Training</label>
+            </value>
+            <value>
+                <fullName>Tech Support</fullName>
+                <default>false</default>
+                <label>Tech Support</label>
+            </value>
+            <value>
+                <fullName>Client Discharged</fullName>
+                <default>false</default>
+                <label>Client Discharged</label>
+            </value>
+            <value>
+                <fullName>School Contract Setup</fullName>
+                <default>false</default>
+                <label>School Contract Setup</label>
+            </value>
+            <value>
+                <fullName>School Meeting Scheduled</fullName>
+                <default>false</default>
+                <label>School Meeting Scheduled</label>
+            </value>
+            <value>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+                <label>Inquiry</label>
+            </value>
+            <value>
+                <fullName>Application</fullName>
+                <default>false</default>
+                <label>Application</label>
+            </value>
+            <value>
+                <fullName>Determination</fullName>
+                <default>false</default>
+                <label>Determination</label>
+            </value>
+            <value>
+                <fullName>Agreement</fullName>
+                <default>false</default>
+                <label>Agreement</label>
+            </value>
+            <value>
+                <fullName>Pending Funding</fullName>
+                <default>false</default>
+                <label>Pending Funding</label>
+            </value>
+            <value>
+                <fullName>Funded</fullName>
+                <default>false</default>
+                <label>Funded</label>
+            </value>
+            <value>
+                <fullName>Declined - Ineligible</fullName>
+                <default>false</default>
+                <label>Declined - Ineligible</label>
+            </value>
+            <value>
+                <fullName>Declined - Incomplete</fullName>
+                <default>false</default>
+                <label>Declined - Incomplete</label>
+            </value>
+            <value>
+                <fullName>Unverified</fullName>
+                <default>false</default>
+                <label>Unverified</label>
+            </value>
+            <value>
+                <fullName>Verified</fullName>
+                <default>false</default>
+                <label>Verified</label>
+            </value>
+            <value>
+                <fullName>Participant</fullName>
+                <default>false</default>
+                <label>Participant</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Donor</fullName>
+                <default>false</default>
+                <label>Donor</label>
+            </value>
+            <value>
+                <fullName>Committee Member</fullName>
+                <default>false</default>
+                <label>Committee Member</label>
+            </value>
+            <value>
+                <fullName>Client on Waitlist</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Client on Waitlist</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>Waitlisted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Waitlisted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

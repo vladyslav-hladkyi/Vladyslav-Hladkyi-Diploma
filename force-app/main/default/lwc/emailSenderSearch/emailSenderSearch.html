@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-form-element">
+        <div class="slds-form-element__control">
+          <div class="slds-combobox_container">
+            <div class={comboboxClasses}>
+              <template if:true={showListbox}>
+                  <div class="slds-dropdown slds-truncate slds-dropdown_length-with-icon-9" style="width: 100%; max-height:115px; overflow: auto;">
+                    <ul class="slds-listbox slds-listbox_vertical">
+                      <template for:item="record" for:each={records}>
+                        <c-email-sender-search-item
+                            key={record.id}
+                            icon-name={iconName}
+                            record={record}
+                            onselectrecord={handleSelectRecord}>
+                        </c-email-sender-search-item>
+                      </template>
+                    </ul>
+                  </div>
+              </template>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>

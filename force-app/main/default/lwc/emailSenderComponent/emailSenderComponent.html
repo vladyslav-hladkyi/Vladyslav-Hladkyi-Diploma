@@ -1,0 +1,93 @@
+<template>
+    <lightning-card title={title}>
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <div slot="actions">
+            <lightning-button-menu alternative-text="Show menu" menu-alignment="auto">
+                <lightning-menu-item 
+                    value="clearAll" 
+                    label="Clear All Contacts" 
+                    icon-name="utility:clear" 
+                    onclick={handleClearAllContacts}>
+                </lightning-menu-item>
+                <lightning-menu-item   
+                    value="addRelatedContacts" 
+                    label="Add All Related Contacts" 
+                    icon-name="utility:add" 
+                    onclick={handleAddRelatedContacts}>
+                </lightning-menu-item>
+                <lightning-menu-item 
+                    value="leftRelatedContacts" 
+                    label="Left Only Related Contacts" 
+                    icon-name="utility:change_owner" 
+                    onclick={handleLeftOnlyRelatedContacts}>
+                </lightning-menu-item>
+                <lightning-menu-item 
+                    value="hideRecipients" 
+                    label="Hide Recipients" 
+                    icon-name="utility:hide" 
+                    onclick={handleHideRecipients}>
+                </lightning-menu-item>
+            </lightning-button-menu>
+        </div>
+        <div class="slds-p-top_medium slds-p-horizontal_medium">
+            <lightning-input
+                onkeyup={handleKeyUpSearch}
+                onblur={handleSearchBlur}
+                onfocus={handleSearchFocus}
+                variant="label-hidden"
+                is-loading={isSearchLoading}
+                placeholder="Search Additional Recipients"
+                type="search">
+            </lightning-input>
+            <c-email-sender-search lwc:ref="searchContactList"
+                records={availableContacts}
+                icon-name="standard:contact"
+                onselectrecord={handleSelectContact}>
+            </c-email-sender-search>
+            <lightning-pill-container 
+                items={recipients} 
+                onitemremove={handleItemRecipientRemove}
+                is-collapsible
+	            is-expanded={areRecipientsExpanded}
+                onfocus={handleExpandRecipients}>
+            </lightning-pill-container>
+        </div>
+        <template lwc:if={emailCopyIsShown}>
+            <div class="slds-p-top_medium slds-p-horizontal_medium">
+                <lightning-input
+                    lwc:ref="emailsInput"
+                    onkeyup={handleKeyUpEmails}
+                    variant="label-hidden" 
+                    placeholder={emailCopyPlaceholder}
+                    type="email">
+                </lightning-input>
+                <lightning-pill-container 
+                    items={emailsToCopy} 
+                    onitemremove={handleItemEmailRemove}>
+                </lightning-pill-container>
+            </div>
+        </template>
+        <div class=" slds-p-horizontal_medium">
+            <lightning-input
+                onchange={handleChangeEmailSubject}
+                type="text"
+                value={emailSubject}
+                placeholder="Subject...">
+            </lightning-input>
+        </div>
+        <div class="slds-p-top_small slds-p-horizontal_medium">
+            <lightning-input-rich-text 
+                value={emailBody} 
+                onchange={handleChangeEmailBody}>
+            </lightning-input-rich-text>
+        </div>
+        <div slot="footer">
+            <lightning-button-group>
+                <lightning-button label="Send" icon-name="utility:sender_email" onclick={handleSendEmails}></lightning-button>
+                <lightning-button label="Reset" icon-name="utility:clear" onclick={handleResetEmail}></lightning-button>
+            </lightning-button-group>
+        </div>
+    </lightning-card>
+</template>

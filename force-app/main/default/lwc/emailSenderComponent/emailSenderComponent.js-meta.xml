@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property 
+                label="Title of Component" 
+                name="title" 
+                required="false" 
+                type="String"
+            />
+            <property 
+                label="Addtional Field to Display" 
+                name="fieldToDisplay" 
+                required="false" 
+                type="String" 
+                description="API name of Contact's field that will be displayed with Name"
+            />
+            <property 
+                label="Filter for Contacts" 
+                name="contactFilter" 
+                required="false" 
+                type="String" 
+                description="Use SOQL expression after WHERE. Esample: Status__c = 'Approved'"
+            />
+            <property 
+                name="typeOfEmailCopy" 
+                type="String"
+                label="Type of Email Copy"
+                datasource="apex://EmailSenderEmailCopyPicklist"
+            />
+            <property 
+                name="orgWideAddressId" 
+                type="String"
+                label="Org-Wide Address"
+                datasource="apex://EmailSenderOrgWideAddressPicklist"
+            />
+            <property 
+                label="Are Junction Used?" 
+                name="isJunctionUsed" 
+                required="false" 
+                default="false"
+                type="Boolean" 
+                description="It determines expected structure of JSON for 'JSON Contacts Source'"
+            />
+            <property 
+                label="Filter for Junction Object"
+                name="junctionFilter" 
+                required="false" 
+                type="String" 
+                description="It's appliable only when relatedRecordsAreChilds = false. Use SOQL expression after WHERE. Esample: Status__c = 'Approved'"
+            />
+            <property 
+                label="JSON Contacts Source" 
+                name="jsonAPINames" required="true" 
+                type="String" 
+                description="JSON string in such format: { relatedRecordsAreChilds:true, lookupFromChildToCurrentObject: 'Service_Schedule__c', junctionObjectName: '', lookupToContactOnJunction: ''}"
+            />
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

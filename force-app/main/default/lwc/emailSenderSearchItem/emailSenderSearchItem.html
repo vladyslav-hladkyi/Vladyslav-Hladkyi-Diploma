@@ -1,0 +1,12 @@
+<template>
+    <li class="slds-listbox__item">
+        <div onmousedown={handleMouseDown} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta">
+          <span class="slds-media__figure slds-listbox__option-icon" style="margin: auto;">
+            <lightning-icon icon-name={iconName} size="small"></lightning-icon>
+          </span>
+          <span class="slds-media__body slds-text-align_center" style="margin: auto; white-space:break-spaces;" title={record.name}>
+              <p>{record.label}</p>
+          </span>
+        </div>
+    </li>
+</template>
