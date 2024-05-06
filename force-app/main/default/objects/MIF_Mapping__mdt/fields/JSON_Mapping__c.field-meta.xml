@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JSON_Mapping__c</fullName>
+    <description>It&apos;s a JSON array where each item represents mapping for one field-columns. 
+Example:
+
+[
+  {
+    &quot;apiName&quot;: &quot;test__c&quot;,
+    &quot;columnName&quot;: &quot;Member Test&quot;,
+    &quot;transformationMethod&quot;: &quot;normalizeLanguage&quot;
+  }
+]</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>JSON Mapping</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>10</visibleLines>
+</CustomField>
