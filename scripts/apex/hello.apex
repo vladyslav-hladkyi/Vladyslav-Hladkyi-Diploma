@@ -1,10 +1,8 @@
-// Use .apex files to store anonymous Apex.
-// You can execute anonymous Apex in VS Code by selecting the
-//     apex text and running the command:
-//     SFDX: Execute Anonymous Apex with Currently Selected Text
-// You can also execute the entire file by running the command:
-//     SFDX: Execute Anonymous Apex with Editor Contents
+String ObjectType = 'Case';
 
-string tempvar = 'Enter_your_name_here';
-System.debug('Hello World!');
-System.debug('My name is ' + tempvar);
+Type t = Type.forName(ObjectType); //Creating a type class instance
+
+sObject newObj = (SObject)t.newInstance(); //Converting a type class instance to a SObject instance using typecasting
+ //Putting value in the name field of SObject instance
+
+insert newObj; //insert the record

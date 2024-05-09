@@ -1,26 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 	<types>
-		<members>UploadMIFController</members>
-		<members>UploadMIFControllerTest</members>
-		<members>UploadMIFTranformationHelper</members>
-		<name>ApexClass</name>
+		<members>Donatia_Fundraising</members>
+		<members>Donatia_Program_Managment</members>
+		<name>CustomApplication</name>
 	</types>
 	<types>
-		<members>MIF_Mapping__mdt</members>
+		<members>Account</members>
+		<members>Application__c</members>
+		<members>Benefit_Delivery__c</members>
+		<members>Benefit_Type__c</members>
+		<members>Campaign</members>
+		<members>Contact</members>
+		<members>Donate__c</members>
+		<members>Program_Assignment__c</members>
+		<members>Program_Budget__c</members>
+		<members>Program__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>MIF_Mapping__mdt-MIF Mapping Layout</members>
+		<members>Application__c</members>
+		<members>Benefit_Delivery__c</members>
+		<members>Benefit_Type__c</members>
+		<members>Donate__c</members>
+		<members>Program_Assignment__c</members>
+		<members>Program_Budget__c</members>
+		<members>Program__c</members>
+		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Donatia_External_Form1</members>
+		<name>ExperienceBundle</name>
+	</types>
+	<types>
+		<members>Account_Household_Lightning_Layout</members>
+		<members>Campaign_Lightning_Layout</members>
+		<members>Contact_Client_Lightning_Layout</members>
+		<members>Contact_Donor_Lightning_Layout</members>
+		<members>Donatia_Fundraising_UtilityBar</members>
+		<members>Donatia_Program_Managment_UtilityBar</members>
+		<members>Home_Page_Donatia_Fundraising</members>
+		<members>Home_Page_Donatia_Programs</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Application_External_Form</members>
+		<members>Assign_Program_For_Client</members>
+		<members>Benefit_Delivery_Validations</members>
+		<members>Create_Multiple_Donates</members>
+		<members>Program_Assignments_Validations</members>
+		<members>Program_Validations</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Account-Account Layout</members>
+		<members>Account-Household Layout</members>
+		<members>Application__c-Application Layout</members>
+		<members>Benefit_Delivery__c-Benefit Delivery Layout</members>
+		<members>Benefit_Type__c-Benefit Type Layout</members>
+		<members>Campaign-Campaign Layout</members>
+		<members>Contact-Client Layout</members>
+		<members>Contact-Donor Layout</members>
+		<members>Donate__c-Donate Layout</members>
+		<members>Excel_File_Mapping__mdt-Excel File Mapping Layout</members>
+		<members>Program_Assignment__c-Program Assignment Layout</members>
+		<members>Program_Budget__c-Program Budget Layout</members>
+		<members>Program__c-Program Layout</members>
 		<name>Layout</name>
 	</types>
 	<types>
-		<members>uploadMIF</members>
-		<name>LightningComponentBundle</name>
-	</types>
-	<types>
-		<members>ExcelReaderPlugin</members>
-		<name>StaticResource</name>
+		<members>Access_Nonprofit_Objects</members>
+		<members>Admin_Full</members>
+		<members>Bulk_Email_Sender</members>
+		<members>Run_Flow_Permission</members>
+		<name>PermissionSet</name>
 	</types>
 	<version>58.0</version>
 </Package>

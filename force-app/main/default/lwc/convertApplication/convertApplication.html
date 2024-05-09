@@ -1,0 +1,24 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel header="Convert Application">
+        <template lwc:if={isApplicationConverted}>
+            <div>
+                Application is converted already.
+            </div> 
+        </template>
+        <template lwc:else>
+            <div>
+                Are you sure that you want to create a new Contact from this Application?
+            </div>  
+        </template>
+        <div slot="footer">
+            <template lwc:if={isApplicationConverted}>
+                <lightning-button variant="neutral" label="Cancel" onclick={handleCloseWindow}></lightning-button>
+            </template>
+            <template lwc:else>
+                <lightning-button variant="neutral" label="Cancel" onclick={handleCloseWindow}></lightning-button>
+                <lightning-button variant="brand" label="Convert" onclick={handleConvertRecord} class="slds-m-left_x-small"></lightning-button>
+            </template>
+        </div>
+      </lightning-quick-action-panel>
+</template>
